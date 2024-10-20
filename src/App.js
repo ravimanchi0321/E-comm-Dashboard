@@ -1,10 +1,8 @@
-import './App.css';
+import RouteStack from "./Routes/RouteStack";
 
 function App() {
   return (
-    <div className="App">
-      <span>Hello</span>
-    </div>
+    <RouteStack/>
   );
 }
 
