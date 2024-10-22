@@ -1,6 +1,6 @@
 {
   "data": [
-    { "id": 1, "name": "Create Same Page structure like Vamshi Page", "link": "/Task2" }
+    { "id": 1, "name": "Create Same Page structure like Vamshi Page", "link": "/GirishTask1" }
   ],
   "columns": [
     { "key": "id", "header": "ID", "width": "5%" },
