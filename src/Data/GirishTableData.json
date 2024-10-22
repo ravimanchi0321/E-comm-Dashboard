@@ -1,0 +1,11 @@
+{
+  "data": [
+    { "id": 1, "name": "Task1", "link": 30 },
+    { "id": 2, "name": "Task2", "link": 25 }
+  ],
+  "columns": [
+    { "key": "id", "header": "ID", "width": "5%" },
+    { "key": "name", "header": "Taks" , "width": "70%" },
+    { "key": "link", "header": "link", "width": "25%" }
+  ]
+}

@@ -1,8 +1,13 @@
 import React from "react";
+import TableComponent from "../Components/TableComponent";
+import VamshiTableData from "../Data/VamshiTableData.json"
 
 const VamshiLandingPage = () => {
+    const { data, columns } = VamshiTableData;
     return (
-        <span>This is Vamshi Landing Page</span>
+        <div>
+            <TableComponent data={data} columns={columns} />
+        </div>
     );
 };
 export default VamshiLandingPage;
