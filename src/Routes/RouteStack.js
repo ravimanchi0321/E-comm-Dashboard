@@ -20,6 +20,7 @@ const RouteStack = () => {
         <Route path="VamshiTask1" element={<VamshiTask1 />}></Route>
         <Route path="GirishTask1" element={<Girish1 />}></Route>
         <Route path="RaviTask1" element={<RaviTask1 />}></Route>
+        <Route path="Kumar" element={<Kumar />}></Route>
       </Routes>
     </BrowserRouter>
   );
