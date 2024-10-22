@@ -5,18 +5,20 @@ import RaviLandingPage from "../Pages/RaviLandingPage";
 import GirisLandingPage from "../Pages/GirishLandingPage";
 import VamshiLandingPage from "../Pages/VamshiLandingPage";
 import VamshiTask1 from "../Components/TaskComponents/VamshiTasks/VamshiTask1";
+import RaviTask1 from "../Components/TaskComponents/RaviTasks/RaviTask1";
 
 const RouteStack = () => {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<SignInPage />}></Route>
-                <Route path="RaviPage" element={<RaviLandingPage />}></Route>
-                <Route path="GirishPage" element={<GirisLandingPage />}></Route>
-                <Route path="VamshiPage" element={<VamshiLandingPage />}></Route>
-                <Route path="VamshiTask1" element={<VamshiTask1/>}></Route>
-            </Routes>
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SignInPage />}></Route>
+        <Route path="RaviPage" element={<RaviLandingPage />}></Route>
+        <Route path="GirishPage" element={<GirisLandingPage />}></Route>
+        <Route path="VamshiPage" element={<VamshiLandingPage />}></Route>
+        <Route path="VamshiTask1" element={<VamshiTask1 />}></Route>
+        <Route path="RaviTask1" element={<RaviTask1 />}></Route>
+      </Routes>
+    </BrowserRouter>
+  );
 };
 export default RouteStack;
