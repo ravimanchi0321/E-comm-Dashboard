@@ -6,6 +6,7 @@ import GirisLandingPage from "../Pages/GirishLandingPage";
 import VamshiLandingPage from "../Pages/VamshiLandingPage";
 import VamshiTask1 from "../Components/TaskComponents/VamshiTasks/VamshiTask1";
 import RaviTask1 from "../Components/TaskComponents/RaviTasks/RaviTask1";
+import Girish1 from "../Components/TaskComponents/GirishTasks/GirishTask";
 
 const RouteStack = () => {
     return (
