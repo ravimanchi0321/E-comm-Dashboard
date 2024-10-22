@@ -4,6 +4,7 @@ import SignInPage from "../Pages/SignInPage";
 import RaviLandingPage from "../Pages/RaviLandingPage";
 import GirisLandingPage from "../Pages/GirishLandingPage";
 import VamshiLandingPage from "../Pages/VamshiLandingPage";
+import VamshiTask1 from "../Components/TaskComponents/VamshiTasks/VamshiTask1";
 
 const RouteStack = () => {
     return (
@@ -13,6 +14,7 @@ const RouteStack = () => {
                 <Route path="RaviPage" element={<RaviLandingPage />}></Route>
                 <Route path="GirishPage" element={<GirisLandingPage />}></Route>
                 <Route path="VamshiPage" element={<VamshiLandingPage />}></Route>
+                <Route path="VamshiTask1" element={<VamshiTask1/>}></Route>
             </Routes>
         </BrowserRouter>
     );

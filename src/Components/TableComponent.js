@@ -17,7 +17,16 @@ const TableComponent = ({ data, columns }) => {
                 {data.map((row) => (
                     <tr key={row.id}>
                         {columns.map((column) => (
-                            <td key={column.key}>{row[column.key]}</td>
+                            <td key={column.key}>
+                                {column.key === "link" ? (
+                                    // Only the link should display its own value
+                                    <a href={row[column.key]} target="_blank" rel="noopener noreferrer">
+                                        Open Link {row.link}
+                                    </a>
+                                ) : (
+                                    row[column.key]
+                                )}
+                            </td>
                         ))}
                     </tr>
                 ))}
