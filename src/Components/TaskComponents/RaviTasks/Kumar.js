@@ -6,7 +6,12 @@ const Kumar = () => {
   };
 
   const updateDemo1Text = () => {
-    document.getElementById("demo1").innerText = "Ravi Kumar Manchi";
+    const demo1Element = document.getElementById("demo1");
+    if (demo1Element.innerText === "Ravi Kumar Manchi") {
+      demo1Element.innerText = "DevOps";
+    } else {
+      demo1Element.innerText = "Ravi Kumar Manchi";
+    }
   };
 
   return (
