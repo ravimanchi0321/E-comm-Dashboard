@@ -2,7 +2,12 @@ import React from "react";
 
 const Kumar = () => {
   const updateDemoText = () => {
-    document.getElementById("demo").innerText = "ravi";
+    const demoElement = document.getElementById("demo");
+    if (demoElement.innerText === "2nd Task page for Ravi Kumar Manchi") {
+      demoElement.innerText = "completed";
+    } else {
+      demoElement.innerText = "2nd Task page for Ravi Kumar Manchi";
+    }
   };
 
   const updateDemo1Text = () => {
