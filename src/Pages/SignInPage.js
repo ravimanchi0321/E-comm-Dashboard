@@ -20,7 +20,7 @@ const SignInPage = () => {
         );
 
         if (user){
-            navigate(user.route);
+            navigate("/Home");
         }else{
             setError("Invaild credentials");
         }

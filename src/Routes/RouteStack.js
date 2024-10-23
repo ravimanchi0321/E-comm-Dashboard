@@ -8,12 +8,14 @@ import VamshiTask1 from "../Components/TaskComponents/VamshiTasks/VamshiTask1";
 import RaviTask1 from "../Components/TaskComponents/RaviTasks/RaviTask1";
 import Kumar from "../Components/TaskComponents/RaviTasks/Kumar";
 import Girish1 from "../Components/TaskComponents/GirishTasks/GirishTask";
+import Home from "../Pages/Home";
 
 const RouteStack = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<SignInPage />}></Route>
+        <Route path="Home" element={<Home />}></Route>
         <Route path="RaviPage" element={<RaviLandingPage />}></Route>
         <Route path="GirishPage" element={<GirisLandingPage />}></Route>
         <Route path="VamshiPage" element={<VamshiLandingPage />}></Route>
