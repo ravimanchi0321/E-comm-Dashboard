@@ -1,70 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Home = () => {
+  // Details for the box
+  const details = ['My Page', 'Dataset', 'Add Version', 'Payment'];
+
   return (
     <div>
-      <nav style={styles.navbar}>
-        <div style={styles.navLeft}>
-          <Link to="/about" style={styles.navLink}>About</Link>
-        </div>
-        <div style={styles.navRight}>
-          <ul style={styles.navList}>
-            <li style={styles.navItem}>
-              <Link to="/RaviPage" style={styles.navLink}>Ravi</Link>
-            </li>
-            <li style={styles.navItem}>
-              <Link to="/VamshiPage" style={styles.navLink}>Vamshi</Link>
-            </li>
-            <li style={styles.navItem}>
-              <Link to="/GirishPage" style={styles.navLink}>Girish</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div style={styles.content}>
-        <h1>Welcome to Home Page</h1>
-        <p>Select a page from the navbar to navigate.</p>
+      <h1>Box with Page Details</h1>
+
+      {/* Box with details */}
+      <div className="box" style={boxStyle}>
+        {details.map((detail, index) => (
+          <div key={index}>{detail}</div>
+        ))}
       </div>
     </div>
   );
 };
 
-// Simple styling for the navbar
-const styles = {
-    navbar: {
-      backgroundColor: '#f8f9fa',
-      padding: '10px',
-      display: 'flex',
-      justifyContent: 'space-between', // Align left and right
-      marginBottom: '20px',
-      alignItems: 'center',
-    },
-    navLeft: {
-      flex: 1, // Push the content to the left
-    },
-    navRight: {
-      flex: 1, // Push the content to the right
-      display: 'flex',
-      justifyContent: 'flex-end', // Align items to the right
-    },
-    navList: {
-      listStyleType: 'none',
-      padding: 0,
-      display: 'flex',
-      margin: 0,
-    },
-    navItem: {
-      margin: '0 15px',
-    },
-    navLink: {
-      textDecoration: 'none',
-      color: '#007bff',
-      fontSize: '18px',
-    },
-    content: {
-      textAlign: 'center',
-    },
-  };
-  
+// Inline styles (You can also move them to a separate CSS file)
+const boxStyle = {
+  width: '200px',
+  height: '400px',
+  border: '1px solid black',
+  borderRadius: '20px',
+  fontSize: '15px',
+  padding: '10px',
+  textAlign: 'center',
+  lineHeight: '5.8em',
+  wordWrap: 'break-word',
+  backgroundColor: '#F5F5F5' // Updated color
+};
+
 export default Home;
